@@ -27,6 +27,7 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "AdBanner.h"
 
 @implementation AppController
 
@@ -72,6 +73,23 @@ static AppDelegate s_sharedApplication;
         // use this method on ios6
         [window setRootViewController:_viewController];
     }
+    
+    if ([window bounds].size.height > 960) {
+        adBannerView = [[GADBannerView alloc] initWithFrame:CGRectMake([window bounds].size.width/2 - 728/2, [window bounds].size.height, 728, 90)];
+    } else {
+        adBannerView = [[GADBannerView alloc] initWithFrame:CGRectMake([window bounds].size.width/2 - 320.0/2, [window bounds].size.height, 320, 50.0)];
+    }
+    
+    // Specify the ad unit ID.
+    adBannerView.adUnitID = @"a15343e8f9383d6";
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    adBannerView.rootViewController = _viewController;
+    [eaglView addSubview:adBannerView];
+    
+    // Initiate a generic request to load it with an ad.
+    [adBannerView loadRequest:[GADRequest request]];
 
     [window makeKeyAndVisible];
 
