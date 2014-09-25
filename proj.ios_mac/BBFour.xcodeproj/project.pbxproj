@@ -29,12 +29,12 @@
 		338C308019D412CD00565E45 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C307F19D412CD00565E45 /* StoreKit.framework */; };
 		338C308219D412D300565E45 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C308119D412D300565E45 /* SystemConfiguration.framework */; };
 		338C308419D4155D00565E45 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C308319D4155D00565E45 /* GameController.framework */; };
-		338C308619D4157000565E45 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C308519D4157000565E45 /* MediaPlayer.framework */; };
 		338C308819D415F900565E45 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C308719D415F900565E45 /* CoreTelephony.framework */; };
 		338C30F019D41A5C00565E45 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C30EE19D41A5C00565E45 /* libGoogleAdMobAds.a */; };
 		338C30F419D41B8C00565E45 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C30F219D41B8C00565E45 /* EventKit.framework */; };
 		338C30F519D41B8C00565E45 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C30F319D41B8C00565E45 /* EventKitUI.framework */; };
 		338C30FE19D41C6B00565E45 /* GameCenterApi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 338C30FD19D41C6B00565E45 /* GameCenterApi.mm */; };
+		338C30FF19D41D3800565E45 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C308519D4157000565E45 /* MediaPlayer.framework */; };
 		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
 		46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
 		46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7719C43A67006E1F66 /* CloseSelected.png */; };
@@ -213,10 +213,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				338C30FF19D41D3800565E45 /* MediaPlayer.framework in Frameworks */,
 				338C30F419D41B8C00565E45 /* EventKit.framework in Frameworks */,
 				338C30F519D41B8C00565E45 /* EventKitUI.framework in Frameworks */,
 				338C308819D415F900565E45 /* CoreTelephony.framework in Frameworks */,
-				338C308619D4157000565E45 /* MediaPlayer.framework in Frameworks */,
 				338C308419D4155D00565E45 /* GameController.framework in Frameworks */,
 				338C308219D412D300565E45 /* SystemConfiguration.framework in Frameworks */,
 				338C308019D412CD00565E45 /* StoreKit.framework in Frameworks */,
