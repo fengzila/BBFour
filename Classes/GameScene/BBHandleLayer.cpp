@@ -55,6 +55,5 @@ void BBHandleLayer::initSprite()
 {
 //    BBAudio::playMusic(__String::createWithFormat("game_bg_0%d.mp3", arc4random()%6+1)->getCString());
     
-//    GameCenterApi::getInstance()->initStoreKit();
     
 }
